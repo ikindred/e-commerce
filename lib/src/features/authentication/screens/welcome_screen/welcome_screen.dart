@@ -103,11 +103,12 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             Positioned.fill(
-              top: 96,
+              top: 100,
+              left: 22,
               child: Align(
                 alignment: Alignment.topCenter,
                 child: SizedBox(
-                    width: size.width * 0.42,
+                    width: size.width * 0.57,
                     height: size.height * 0.5,
                     child: const Image(
                       image: AssetImage(handCard),
