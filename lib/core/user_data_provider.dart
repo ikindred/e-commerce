@@ -39,6 +39,7 @@ class UserDataProvider {
 
   static Future<void> querySingleSnapShot({required String uid, required ref}) {
     // Call the user's CollectionReference to add a new user
+
     return FirebaseFirestore.instance
         .collection('users')
         .doc(uid)
@@ -46,6 +47,7 @@ class UserDataProvider {
         .then((DocumentSnapshot documentSnapshot) {
       ref.read(userNameFire.notifier).state = documentSnapshot.get('username');
       ref.read(emailFire.notifier).state = documentSnapshot.get('email');
+      ref.read(userCartFire.notifier).state = documentSnapshot.get('cart');
     });
   }
 }

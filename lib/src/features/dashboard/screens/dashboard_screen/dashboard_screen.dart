@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:e_commerce/src/features/dashboard/screens/dashboard_screen/widgets/header_widget.dart';
 
+import 'widgets/product_cards_widgets/product_list_widget.dart';
+
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
 
@@ -29,6 +31,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   children: [
                     HeaderWidget(),
                     const SizedBox(height: 15),
+                    const ProductListWidget()
                   ],
                 ),
               ),
