@@ -30,7 +30,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     HeaderWidget(),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 16),
                     const ProductListWidget()
                   ],
                 ),
